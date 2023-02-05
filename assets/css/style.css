@@ -123,7 +123,6 @@ body {
 }
 
 #principal-item a {
-	width: 512px;
 	margin-bottom: 1em;
 }
 
@@ -138,10 +137,6 @@ body {
 
 #platform {
 	margin-inline: 10em;
-}
-
-#platform img {
-	width: 70%;
 }
 
 #platform h2 {
@@ -165,6 +160,10 @@ body {
 #notebook {
 	margin-inline: 10em;
 	gap: 50px;
+}
+
+#notebook img {
+	width: 90%;
 }
 
 /*========== Devices Section ==========*/
@@ -195,7 +194,6 @@ body {
 }
 
 #footer-section img {
-	width: 102px;
 	margin-bottom: 40px;
 }
 
@@ -234,4 +232,60 @@ body {
 
 #copyright p:first-of-type {
 	margin-block: 24px;
+}
+
+/*========== Media Queries ==========*/
+
+@media screen and (max-width: 768px) {
+	.container {
+		display: block;
+		background: none;
+	}
+
+	#principal {
+		background: none;
+		margin-top: 6rem;
+	}
+
+	#principal-item img {
+		width: 50vw;
+	}
+
+	#principal-item {
+		margin: 2em 2em;
+	}
+
+	#platform {
+		margin: 0;
+		text-align: center;
+		margin-inline: 2em;
+	}
+
+	#platform img {
+		width: 50vw;
+	}
+
+	#screen {
+		text-align: center;
+	}
+
+	#screen a {
+		margin-block: 3em;
+	}
+
+	#notebook h2 {
+		margin-block: 1em;
+	}
+
+	#devices-items {
+		display: block;
+	}
+
+	#footer-data {
+		display: block;
+	}
+
+	#copyright {
+		margin-inline: 2em;
+	}
 }
