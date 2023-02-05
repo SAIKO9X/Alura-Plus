@@ -1,0 +1,237 @@
+/*========== Font Link ==========*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/*========== Principal Elements ==========*/
+
+:root {
+	--bg-color: #00030c;
+	--white: #ffffff;
+	--gray-500: #c0c0c0;
+	--gray-100: #f9f9f9;
+	--blue-600: #167bf7;
+
+	--font-principal: "Inter";
+}
+
+/*========== Reset CSS ==========*/
+
+* {
+	font-family: var(--font-principal);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--white);
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--gray-100);
+}
+::-webkit-scrollbar {
+	width: 5px;
+	background: #f4f4f4;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--blue-600);
+	border-radius: 5px;
+}
+
+/*========== Reused Styles ==========*/
+
+.title {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 120%;
+	color: var(--white);
+}
+
+.subtitle {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 150%;
+	color: var(--gray-500);
+}
+
+.btn-primary {
+	background-color: var(--blue-600);
+	color: var(--white);
+	transition: scale 250ms ease;
+}
+
+.btn-secondary {
+	background-color: transparent;
+	color: var(--white);
+
+	border: 2px solid var(--white);
+	transition: scale 250ms ease;
+}
+
+:is(.btn-primary, .btn-secondary) {
+	border-radius: 0.5rem;
+
+	padding: 1rem;
+
+	text-align: center;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 150%;
+
+	display: block;
+}
+
+:is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
+	scale: 1.05;
+}
+
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+}
+
+/*========== Principal Section ==========*/
+
+#principal {
+	background: center / contain url(../img/Background.png) no-repeat;
+}
+
+#principal-item {
+	text-align: center;
+	margin: 0 6em;
+}
+
+#principal-item h1 {
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 34px;
+}
+
+#principal-item img {
+	margin-block: 1.5em 3.5em;
+}
+
+#principal-item a {
+	width: 512px;
+	margin-bottom: 1em;
+}
+
+#principal-item p {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: var(--gray-500);
+}
+
+/*========== Platform Section ==========*/
+
+#platform {
+	margin-inline: 10em;
+}
+
+#platform img {
+	width: 70%;
+}
+
+#platform h2 {
+	margin-bottom: 8px;
+}
+
+/*========== Screen Section ==========*/
+
+#screen {
+	margin-inline: 10em;
+	gap: 70px;
+}
+
+#screen a {
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+/*========== Notebook Section ==========*/
+
+#notebook {
+	margin-inline: 10em;
+	gap: 50px;
+}
+
+/*========== Devices Section ==========*/
+
+#devices {
+	text-align: center;
+}
+
+#devices-items {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 40px;
+	margin-bottom: 145px;
+}
+
+#devices-items h3 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 120%;
+	color: var(--white);
+}
+
+/*========== Footer Section ==========*/
+
+#footer-section {
+	text-align: center;
+}
+
+#footer-section img {
+	width: 102px;
+	margin-bottom: 40px;
+}
+
+#footer-data {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+#footer-data li a {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--white);
+	cursor: pointer;
+
+	transition: all 250ms ease;
+}
+
+#footer-data li a:is(:hover, :focus-visible) {
+	text-shadow: 0 0 4px #fff;
+}
+
+#footer-data li a:active {
+	color: var(--blue-600);
+}
+
+#copyright {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	color: var(--gray-500);
+	margin-bottom: 100px;
+}
+
+#copyright p:first-of-type {
+	margin-block: 24px;
+}
